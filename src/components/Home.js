@@ -4,6 +4,8 @@ import HomePage from '../components/HomePage'
 import About from '../components/About'
 import Test from '../components/Test'
 import { withRouter } from "react-router";
+import Hello from './Hello'
+
 class Home extends Component{
 
     state={
@@ -21,6 +23,7 @@ class Home extends Component{
                     <Route exact path = '/' component={ HomePage }/>
                     <Route exact path = '/about' component={ () => <About handleHomePageClick = {this.handleHomePageClick}/> }/>
                     <Route exact path = '/test' component={ Test }/>
+                    <Route exact path = '/hello' component={ Hello }/>
                 </Switch>
             </div>
         )

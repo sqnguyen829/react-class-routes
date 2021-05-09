@@ -1,5 +1,5 @@
 import { withRouter } from "react-router";
-
+import ChildRoute from "./ChildRoute"
 function About(props) {
     return (
       <div>
@@ -7,6 +7,7 @@ function About(props) {
               homePage
           </button>
           <button onClick={() => props.history.push('/test')}> test page </button>
+          <ChildRoute/>
       </div>
     );
   }
